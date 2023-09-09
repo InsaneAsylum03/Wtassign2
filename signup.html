@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Discord</title>
+        <style>
+            .image{
+                text-align: center;
+                height: 20%;
+                width: 20%;
+                padding-top: 20px;
+                padding-bottom: 7px;
+            }
+            table{
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 100px;
+                background-color: rgb(54, 54, 54);
+                border: transparent;
+            }
+            label{
+                padding-top: 5px;
+                color:  rgb(126, 126, 126);
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size:25px;
+                font-weight: bold;
+            }
+            input{
+                height: 28px;
+                width: 300px;
+                background-color:rgb(24, 24, 24);
+                border: transparent;
+                color: rgb(184, 184, 184);
+                font-size: larger;
+                padding-left: 10px;
+            }
+            .cb{
+                display:flex;
+                justify-content:center;
+            }
+            button{
+                height: 50px;
+                width: 200px;
+                background-color: rgb(147, 147, 248);
+                
+            }
+            h1{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: x-large;
+                color: rgb(156, 156, 156);
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        </style>
+    </head>
+    <body style="background-image: url(bg.png); background-size: cover;">
+        <table border="1">
+            <tr>
+                <td>
+                    <img class="image" src="logo.webp">
+                    <h1>Sign up to hang out with your friends!</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <br><br>
+                        <label for="email">Email </label> <br>
+                        <input type="email" id="email" name="email"> <br>
+                        <label for="dpname">Display Name </label> <br>
+                        <input type="text" id="dpname" name="uname"> <br>
+                        <label for="uname">Username </label> <br>
+                        <input type="text" id="uname" name="uname"> <br>
+                        <label for="pwd">Password </label> <br>
+                        <input type="password" id="pwd" name="pwd"> <br>
+                        <label for="dob">Date of Birth</label> <br>
+                        <input type="date" id="dob" name="dob"> <br>
+                        <div class="cb">
+                            <input style="position:relative; margin: auto;" type="checkbox" id="promo" name="promo">
+                            <label for="promo" style="padding-right: 50px; margin: auto;">(Optional) Send Promotional Emails</label><br><br><br>
+                        </div> 
+                        <button>Continue</button> <br><br>
+                        <button onclick="window.location.href = 'login.html';">Already have an account?</button>
+                        <br><br>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
